@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Przycinanie tła w CSS</title>
+<meta charset="utf-8">
+</head>
+
+<style type=''>
+	.square {
+	width: 120px;
+	height: 120px;
+	border: 20px dotted #bb6600;
+	background-color: #ffddaa;
+	background-image: url("square.jpg");
+	background-repeat: no-repeat;
+	padding: 20px;
+	background-clip: border-box;
+	background-origin: border-box;
+	font-size:12px;
+	}
+	
+	.inner {
+	width: 120px;
+	height: 120px;
+	border: 1px dashed blue;
+	vertical-align: text-bottom;
+	}
+	
+	.outer {
+		width: 200px;
+		height: 200px;
+		border: 1px solid grey;
+		float: left;
+		margin: 10px;
+	}
+</style>
+<body>
+<div class="outer">
+<div class="square" style='background-origin:border-box'>
+<div class='inner'><br /><br /><br /><br /><br /><br /> przycięcie border-box <br> początek border-box</br></div>
+</div>
+</div>
+</body>
+</html>  
