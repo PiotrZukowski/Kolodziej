@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Przycinanie tła w CSS</title>
+<meta charset="utf-8">
+</head>
+<body>
+<style type="">
+.square {
+width: 120px;
+height: 120px;
+border: 20px dotted #bb6600;
+background-color: #ffddaa;
+background-image: url("square.jpg");
+background-repeat: no-repeat;
+padding: 20px;
+background-clip: border-box;
+background-origin: border-box;
+font-size: 12px;
+}
+.inner {
+width: 120px;
+height: 120px;
+border: 1px dashed blue;
+vertical-align: text-bottom;
+}
+.outer {
+width: 200px;
+height: 200px;
+border: 1px solid gray;
+float: left;
+margin: 10px;
+}
+</style>
+<div class='outer'>
+<div class='square' style='background-origin: border-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: border-box<br>początek: border-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-origin: padding-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: border-box<br>początek: padding-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-origin: content-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: border-box<br>początek: content-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-clip: padding-box; background-origin: border-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: padding-box<br>początek: border-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-clip: padding-box; background-origin: padding-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: padding-box<br>początek: padding-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-clip: padding-box; background-origin: content-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: padding-box<br>początek: content-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-clip: content-box; background-origin: border-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: content-box<br>początek: border-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-clip: content-box; background-origin: padding-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: content-box<br>początek: padding-box</div>
+</div>
+</div>
+<div class='outer'>
+<div class='square' style='background-clip: content-box; background-origin: content-box'>
+<div class='inner'><br><br><br><br><br><br>przycięcie: content-box<br>początek: content-box</div>
+</div>
+</div>
+</body>
+</html>
+<Html>
+Znaczniki <head>
+Tło <title>przycinanie css< / title>
+<Meta charset= "Utf-8">
+< / head>.
+<Body>
+<Style type= "" >
+{. Square
+Szerokość: 120 px;
+Wysokość: 120 px;
+Granica: 20 px przepasane bb6600;
+Background-Color: #Fda;
+Tło-image: Url ("Square. jpg");
+Tło-powtarzam: Nie-powtarzam;
+Padding: 20 px;
+Tło-KLIP: granicy-Box;
+Tło-pochodzenie: granicy-Box;
+Font-size: 12 px;
+}
+
+Wewnętrzne {.
+Szerokość: 120 px;
+Wysokość: 120 px;
+Granica: 1 px przerywana niebieski;
+Pionowe-dostosowanie: Tekst-DNA;
+}
+
+{zewnętrznym.
+Szerokość: 200 px;
+Wysokość: 200 px;
+Granica: 1 px; stałe gray
+Float: w lewo;
+Margines: 10 px;
+}
+
+< / style>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-pochodzenie: granicy-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: granicy-box<br>początek: granicy-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-pochodzenie: Padding-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: granicy-box<br>początek: Padding-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-pochodzenie: TREŚCI-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: granicy-box<br>początek: Content-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-KLIP: Padding-Box; tło-pochodzenie: granicy-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: Padding-box<br>początek: granicy-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-KLIP: Padding-Box; tło-pochodzenie: Padding-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: Padding-box<br>początek: Padding-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-KLIP: Padding-Box; tło-pochodzenie: TREŚCI-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: Padding-box<br>początek: Content-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-KLIP: TREŚCI-Box; tło-pochodzenie: granicy-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: Content-box<br>początek: granicy-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-KLIP: TREŚCI-Box; tło-pochodzenie: Padding-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: Content-box<br>początek: Padding-box< / div>
+< / div>
+< / div>
+
+<div class= "zewnętrznej" >
+<div class= " Square " style= " tło-KLIP: TREŚCI-Box; tło-pochodzenie: TREŚCI-Box " >
+<div class= "wewnętrzne" ><Br><Br><Br><Br><Br><Br>Przycięcie: Content-box<br>początek: Content-box< / div>
+< / div>
+< / div>
+
+< / body>
+< / html>
